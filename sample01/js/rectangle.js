@@ -18,19 +18,13 @@ onload = function() {
         // 円の座標、半径、弧度の指定
             cir_ctx1.arc(       
                 zahyo, zahyo,           // 円の中心座標:(x,y)
-                236,                 // 半径
+                236,                    // 半径
                 0 * Math.PI / 180,      // 開始角度: 0度 (0 * Math.PI / 180)
                 180 * Math.PI / 180,    // 終了角度: 180度 (180 * Math.PI / 180)
                 true                    // 方向: true=反時計回りの円、false=時計回りの円
             );
         // 塗りつぶしの実行
             cir_ctx1.fill();
-        // // 枠線の色
-        //     cir_ctx1.strokeStyle = linecolor;
-        // // 枠線の幅
-        //     cir_ctx1.lineWidth = lineWidth;
-        // // 枠線の実行
-        //     cir_ctx1.stroke();
 
     // 上弦の円の縁
         var cir_canvas11 = document.getElementById("circle11");
@@ -39,7 +33,7 @@ onload = function() {
             cir_ctx11.arc(   
                     zahyo, zahyo,           // 円の中心座標:(x,y)
                     hankei,                 // 半径
-                    180 * Math.PI / 180,      // 開始角度: 0度 (0 * Math.PI / 180)
+                    180 * Math.PI / 180,    // 開始角度: 0度 (0 * Math.PI / 180)
                     360 * Math.PI / 180,    // 終了角度: 180度 (180 * Math.PI / 180)
                     false                   // 方向: true=反時計回りの円、false=時計回りの円
                 );
