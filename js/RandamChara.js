@@ -8,5 +8,5 @@
         "7.gif"
         );
     var selectnum = Math.floor(Math.random() * imglist.length);
-    var output = "<img src=" +"/img/chara/"+ imglist[selectnum] +" " +"alt="+"girl>";
+    var output = "<img src=" +"./img/chara/"+ imglist[selectnum] +" " +"alt="+"girl>";
     document.write(output);
